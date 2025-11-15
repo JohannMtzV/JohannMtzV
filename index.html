@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Página Web Simple con Botones</title>
+</head>
+<body>
+
+    <center>
+        <h1>POSICIONAMIENTO WEB&nbsp;</h1>
+<hr> </center>
+
+    <center>
+        <h2>Selecciona una opción:</h2>
+        
+        <button onclick="mostrarInformacion('info1')">SEO&nbsp;</button>
+        <br><br> <button onclick="mostrarInformacion('info2')">SEM&nbsp;</button>
+        <br><br>
+
+        <button onclick="mostrarInformacion('info3')">VisibilidadEnResultados&nbsp;</button>
+        <hr>
+    </center>
+
+    <center>
+        
+        <div id="info1" style="border: 2px solid black; padding: 10px; width: 80%; background-color: #f0f0f0;">
+            <h3>SEO</h3>
+            <p>El posicionamiento web SEO (Search Engine Optimization) es el conjunto de técnicas para mejorar la visibilidad de un sitio web en los resultados orgánicos de los motores de búsqueda como Google. Su objetivo principal es aumentar el tráfico cualificado hacia el sitio web mediante la optimización de su contenido, estructura y factores externos, como los enlaces entrantes. Las estrategias se dividen en dos tipos principales: SEO on-page, que se enfoca en elementos internos del sitio, y SEO off-page, que se centra en factores externos.</p>
+</div>
+        
+        <div id="info2" style="display:none; border: 2px solid black; padding: 10px; width: 80%; background-color: #f0f0f0;">
+            <h3>SEM</h3>
+            <p>El posicionamiento SEM (Search Engine Marketing) es una estrategia de marketing digital que utiliza publicidad de pago por clic para mejorar la visibilidad de un sitio web en los resultados de los motores de búsqueda. A diferencia del SEO, que es orgánico, el SEM ofrece resultados inmediatos y permite segmentar a la audiencia según datos como ubicación e intereses. Las plataformas más comunes son Google Ads.</p>
+        </div>
+        
+        <div id="info3" style="display:none; border: 2px solid black; padding: 10px; width: 80%; background-color: #f0f0f0;">
+            <h3>Visibilidad en resultados</h3>
+            <p> Puntuación de visibilidad: Es una métrica que, aunque varía según la herramienta de análisis (como Semrush), se basa en tu posición para un conjunto de palabras clave y la probabilidad de clics (CTR) asociada a esa posición. </p>
+            <p> Fórmula: Es una métrica que se puede calcular (aunque la fórmula exacta varía) a partir de la posición del sitio en los resultados y las tasas de clics estimadas.</p>
+            <p> Indicador de rendimiento: Una puntuación más alta indica un mejor rendimiento y una mayor visibilidad en los resultados de búsqueda. </p>
+        </div>
+    </center>
+
+    <script>
+        function mostrarInformacion(idAMostrar) {
+            // 1. Oculta todos los contenedores de información
+            document.getElementById('info1').style.display = 'none';
+            document.getElementById('info2').style.display = 'none';
+            document.getElementById('info3').style.display = 'none';
+
+            // 2. Muestra el contenedor seleccionado por el botón
+            document.getElementById(idAMostrar).style.display = 'block'; 
+        }
+
+        // Ejecutar la función una vez para asegurar que sólo info1 esté visible al cargar
+        mostrarInformacion('info1');
+    </script>
+
+    <br><br>
+    <hr>
+    <center>
+        <small>Johann Martínez&nbsp;</small>
+    </center>
+
+</body>
+</html>
